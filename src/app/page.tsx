@@ -123,9 +123,9 @@ export const relatedProductData: Product[] = [
   },
   {
     id: 13,
-    title: "Gradient Graphic T-shirt",
-    srcUrl: "/images/pic13.png",
-    gallery: ["/images/pic13.png", "/images/pic10.png", "/images/pic11.png"],
+    title: "T-shirt",
+    srcUrl: "/images/pic9.png",
+    gallery: ["/images/pic9.png", "/images/pic10.png", "/images/pic11.png"],
     price: 145,
     discount: {
       amount: 0,

@@ -105,26 +105,27 @@ const Footer = () => {
           <p className="text-sm text-center sm:text-left text-black/60 mb-4 sm:mb-0 sm:mr-1">
             Shop.co © 2000-2023, All Rights Reserved
           </p>
-            <div className="flex items-center">
-              {paymentBadgesData.map((badge, _, arr) => (
-                <span
-                  key={badge.id}
-                  className={cn([
-                    arr.length !== badge.id && "mr-3",
-                    "w-[46px] h-[30px] rounded-[5px] border-[#D6DCE5] bg-white flex items-center justify-center",
-                  ])}
-                >
-                  <Image
-                    priority
-                    src={badge.srcUrl}
-                    width={33}
-                    height={100}
-                    alt="user"
-                    className="max-h-[15px]"
-                  />
-                </span>
-              ))}
-            </div>
+          <div className="flex items-center">
+  {paymentBadgesData.map((badge, _, arr) => (
+    <span
+      key={badge.id}
+      className={cn([
+        arr.length !== badge.id && "mr-3",
+        "w-[46px] h-[30px] rounded-lg border border-[#D6DCE5] bg-white flex items-center justify-center transition-all duration-300 hover:bg-gray-100 shadow-sm",
+      ])}
+    >
+      <Image
+        priority
+        src={badge.srcUrl}
+        width={33}
+        height={100}
+        alt="badge"
+        className="max-h-[15px]"
+      />
+    </span>
+  ))}
+</div>
+
           </div>
         </div>
         <LayoutSpacing />
